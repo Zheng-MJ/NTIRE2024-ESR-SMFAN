@@ -104,20 +104,20 @@ class SMFAN(nn.Module):
         return self.to_img(x) 
 
 
-if __name__== '__main__':
-    #############Test Model Complexity #############
-    # import time
-    from fvcore.nn import flop_count_table, FlopCountAnalysis, ActivationCountAnalysis
+# if __name__== '__main__':
+#     #############Test Model Complexity #############
+#     # import time
+#     from fvcore.nn import flop_count_table, FlopCountAnalysis, ActivationCountAnalysis
 
-    # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+#     # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    # x = torch.randn(1, 3, 640, 360)
-    # x = torch.randn(1, 3, 427, 240)
-    # x = torch.randn(1, 3, 320, 180)#.to(device)
-    x = torch.randn(1, 3, 256, 256)
+#     # x = torch.randn(1, 3, 640, 360)
+#     # x = torch.randn(1, 3, 427, 240)
+#     # x = torch.randn(1, 3, 320, 180)#.to(device)
+#     x = torch.randn(1, 3, 256, 256)
 
-    model = SMFAN(dim=24, n_blocks=8, ffn_scale=1.5, upscaling_factor=4, bias=False)
-    print(model)
-    print(flop_count_table(FlopCountAnalysis(model, x), activations=ActivationCountAnalysis(model, x)))
-    output = model(x)
-    print(output.shape)
+#     model = SMFAN(dim=24, n_blocks=8, ffn_scale=1.5, upscaling_factor=4, bias=False)
+#     print(model)
+#     print(flop_count_table(FlopCountAnalysis(model, x), activations=ActivationCountAnalysis(model, x)))
+#     output = model(x)
+#     print(output.shape)

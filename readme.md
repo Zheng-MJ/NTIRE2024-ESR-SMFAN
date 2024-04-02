@@ -23,8 +23,8 @@
 
 ```python
     from utils.model_summary import get_model_flops, get_model_activation
-    from models.team23_safmnpp import SAFMNPP
-    model = SAFMNPP(dim=36, n_blocks=6, ffn_scale=1.5, upscaling_factor=4)
+    from models.team24_smfan import SMFAN
+    model = SMFAN(dim=24, n_blocks=8, ffn_scale=1.5, upscaling_factor=4, bias=False)
     
     input_dim = (3, 256, 256)  # set the input dimension
     activations, num_conv = get_model_activation(model, input_dim)
