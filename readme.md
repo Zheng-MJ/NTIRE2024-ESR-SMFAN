@@ -1,7 +1,7 @@
 # [NTIRE 2024 Challenge on Efficient Super-Resolution](https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/papers/Ren_The_Ninth_NTIRE_2024_Efficient_Super-Resolution_Challenge_Report_CVPRW_2024_paper.pdf) @ [CVPR 2024](https://cvpr2024.thecvf.com/)
 
 ## 📖 SMFAN: A Lightweight Self-Modulation Feature Aggregation Network for Efficient Image Super-Resolution
-### We placed 2nd and 3rd in the Parameters and FLOPs sub-track of the NTIRE2024 ESR Challenge.
+### We placed 2nd and 3rd in the FLOPs and Parameters sub-track of the NTIRE2024 ESR Challenge.
 ---
 <p align="center">
   <img width="800" src="./figs/SMFAN_arch.png">
@@ -40,3 +40,10 @@
     num_parameters = num_parameters / 10 ** 6
     print("{:>16s} : {:<.4f} [M]".format("#Params", num_parameters))
 ```
+
+### Results of NTIRE 2024 Efficient SR Challenge
+Our team (VPEG_C) placed 2nd and 3rd in the FLOPs and Parameters sub-track of the [NTIRE 2024 ESR Challenge](https://openaccess.thecvf.com/content/CVPR2024W/NTIRE/papers/Ren_The_Ninth_NTIRE_2024_Efficient_Super-Resolution_Challenge_Report_CVPRW_2024_paper.pdf).
+<p align="center">
+  <img width="800" src="./figs/results.png">
+</p>
+
