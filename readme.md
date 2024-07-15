@@ -4,7 +4,7 @@
 ### We placed 2nd and 3rd in the FLOPs and Parameters sub-track of the NTIRE2024 ESR Challenge.
 ---
 <p align="center">
-  <img width="800" src="./figs/SMFAN_arch.png">
+  <img width="800" src="./figs/safmnet_arch.png">
 </p>
 
 *An overview of the proposed SMFAN.*
